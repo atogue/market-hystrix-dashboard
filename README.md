@@ -12,3 +12,14 @@ Remember to enable Hystrix into Gateway API service by adding the following anno
 ```
 @EnableHystrix
 ```
+
+Allow the actuator endpoint into dashboard proxy list by adding the following configuration into application.yml
+```
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+```
+or into application.properties:
+````
+hystrix.dashboard.proxy-stream-allow-list=*
+```
