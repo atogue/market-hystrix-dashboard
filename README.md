@@ -7,3 +7,8 @@ requirements:
 - java 15
 - Maven 3.6.3
 - Dependency: Hystrix Dashboard
+
+Remember to enable Hystrix into Gateway API service by adding the following annotation into main class:
+```
+@EnableHystrix
+```
